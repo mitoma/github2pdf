@@ -13,4 +13,4 @@ local.properties
 .settings/
 .loadpath
 src/main/resources/twitter4j.properties
-
+target/
