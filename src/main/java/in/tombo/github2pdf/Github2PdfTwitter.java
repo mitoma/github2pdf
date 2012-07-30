@@ -24,6 +24,9 @@ public class Github2PdfTwitter {
 
     @Override
     public void onStatus(Status status) {
+      if (status.isRetweet()) {
+        return;
+      }
       if (status.getUser().getScreenName().equals("github2pdf")) {
         return;
       }
